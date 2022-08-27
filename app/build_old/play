@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Rock, Paper, Scissors Game - Play Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1><span class="header-background">Rock, Paper, Scissors Game</span></h1>
+        <nav class="nav">
+            <ul>
+                <li><a class="btn-links" href="/">Instructions</a></li>
+                <li><a class="btn-links" href="/play">Play Game</a></li>
+            </ul>
+        </nav>
+        
+
+<h2 class="game-in-play-title">Game in play...</h2>
+
+<div class="game-container">
+    <div class="player1-box">
+        <form action="/play" method="post">
+
+            <label for="player1_name">Player 1</label>
+            <br>
+            <input type="text" name="player1_name" placeholder="Player 1" value="">
+            <select class="player1-selection" name="player1_selection">
+                <option value="" selected disabled hidden>Choose here</option>
+
+                <!-- Keep previous selection shown in drop down box -->
+                
+                <option value="rock">Rock</option>
+                
+
+                
+                <option value="paper">Paper</option>
+                
+
+                
+                <option value="scissors">Scissors</option>
+
+                
+
+            </select>
+            <br>
+            <input class="submit_btn" type="submit">
+        </form>
+    </div>
+
+    <div class="computer-box">
+        <span>Player 2</span>
+        <p> chose </p>
+    </div>
+
+    <!-- Set appropriate coloured border for who wins or none for draw -->
+
+    <!-- Setup for a computer win  -->
+    
+    <div class="winner-box winner-box-green">
+        <h2> WINS!!</h2>
+        <p> beats </p>
+    </div>
+
+    <!-- Setup for a draw  -->
+    
+
+</div>
+
+
+
+        <footer class="footer">
+            &copy Scott Johnston Games
+        </footer>
+    </div>
+</body>
+
+</html>

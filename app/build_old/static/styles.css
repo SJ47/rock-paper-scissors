@@ -1,0 +1,188 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rock Salt', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.game-in-play-title {
+    margin-top: 0;
+}
+
+.container {
+    background: lightgrey;
+    border: 5px solid grey;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 25px;
+
+}
+
+.nav > ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.nav > ul > li {
+    list-style: none;
+    margin: 0 2em;
+}
+
+.nav > ul > li > a {
+    font-size: 1em;
+    padding: 0 2em;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: .8em 0;
+    margin-top: 0;
+    border-radius: 25px;
+    background-image: url("./images/rock-paper-scissors.png");
+    background-size: 2em;
+}
+
+.header-background {
+    background-color: rgba(128,128,128);
+    padding: 0 1em;
+    border-radius: 25px;
+}
+
+.btn-links {
+    background-color: grey;
+    border-radius: 25px;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-links:hover, .btn-links:focus {
+    background: hotpink;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    background: gray;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 3em;
+    padding: .3em;
+}
+
+
+/* Instructions page */
+.instructions-container {
+    margin: 0 2em;
+    font-size: .8em;
+
+}
+
+/* Play game page  */
+.game-container {
+    display: grid;
+    width: 100%;
+    border-radius: 25px;
+    grid-template-columns: 200px 300px 200px;
+    grid-template-rows: 300px;
+}
+
+.player1-box {
+    grid-area: 1 / 1 / 2 / 2;
+    text-align: center;
+    padding-top: .8em;
+    height: 80px;
+}
+
+.player1-box > form > label:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.player1-box > form > input {
+    width: 80%;
+    outline: none;
+}
+
+.player1-box > form > input:first-of-type {
+    font-family: 'Rock Salt', cursive;
+    background: transparent;
+    border: unset;
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.player1-selection {
+    margin-top: 1em;
+    width: 80%;
+    font-family: 'Rock Salt', cursive;
+    background: transparent;
+    border: unset;
+    border: 1px solid grey;
+    border-radius: 25px;
+    text-align-last: center;
+    outline: none;
+}
+
+.computer-box {
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: center;
+    padding-top: .8em;
+}
+
+.computer-box > span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.computer-box > p:first-of-type {
+    margin-top:0;
+}
+
+.winner-box {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    justify-self: center;
+    background-color: grey;
+    text-align: center;
+    padding-top: 2em;
+    height: 100%;
+    border-radius: 25px;
+    color: white;
+}
+
+.winner-box-red {
+    border: 5px solid red;
+}
+
+.winner-box-green {
+    border: 5px solid greenyellow;
+}
+
+.submit_btn {
+    font-family: 'Rock Salt', cursive;
+    background-color: grey;
+    font-size: 1em;
+    margin-top: 1em;
+    border: unset;
+    cursor: pointer;
+    color: white;
+    border-radius: 25px;
+    outline: none;
+}
+
+.submit_btn:hover, .submit_btn:focus {
+    background: hotpink;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
