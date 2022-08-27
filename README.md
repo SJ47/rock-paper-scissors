@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Game
 
-<h3>Screenshot of instructions</h3>
+<h3>Instructions</h3>
 
 <img src="app/static/images/screenshot-instructions.png">
 
